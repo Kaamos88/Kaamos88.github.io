@@ -116,8 +116,7 @@ span {
     @media only screen and (max-width: 650px) {
       .page-three .slider {
         margin-top: 50px;
-        width: 80%;
-        margin-bottom: 0px; } }
+        width: 80%; } }
   .page-three #next {
     margin-top: 200px;
     text-align: center; }
