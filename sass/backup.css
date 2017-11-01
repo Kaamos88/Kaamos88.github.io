@@ -1,0 +1,165 @@
+@import "reset";
+@import "var";
+@import "mixin";
+@import "gallery";
+
+.cover{
+    height: 100%;
+    margin: 0 auto;
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+      word-spacing: 30px;
+    }
+
+    a:hover{
+      color: $textaltC;
+    }
+
+    img{
+      width: 300px;
+    }
+    ul{
+      margin-top: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    li{
+      margin: 5px;
+      text-align: center;
+      color: $textC;
+      font-family: 'Roboto', sans-serif;
+    }
+}
+
+.page-two{
+  height: 100%;
+  margin: 0 auto;
+  width: 80%;
+  h1{
+    text-align: center;
+  }
+  .skills{
+      @extend .cover;
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-around;
+
+   }
+  .img-container{
+      margin-bottom: 10px;
+      text-align: center;
+
+   }
+  h3{
+      width: 100%;
+      text-align: center;
+      color: $textC;
+      font-family: 'Roboto', sans-serif;
+  }
+}
+
+.page-three{
+  @extend .cover;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    ul{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    }
+
+  /*  #slides{
+      border: 10px solid $bgaltC;
+      width: 40%;
+      margin: 0 auto;
+      margin-top: 50px;
+      @include mQ (750px){
+        width: 80%;
+      };
+    }*/
+
+
+}
+
+.page-four{
+  @extend .cover;
+      height: 100%;
+      margin: 0 auto;
+      text-align: center;
+      width: 80%;
+      .skills{
+         margin-top: 100px;
+          display: flex;
+          justify-content: space-around;
+
+
+        }
+      .img-container{
+                margin-bottom: 10px;
+                text-align: center;
+                width: (100% / 3);
+        }
+      h3{
+           width: 100%;
+           text-align: center;
+           color: #303644;
+           font-family: 'Roboto', sans-serif;
+        }
+      .img{
+           width: 40%;
+        }
+}
+
+#next{
+    @include position;
+    top: 200%;
+    left: 50%;
+    a{
+    @include next;
+    @include hover;
+    }
+
+}
+
+#second-next{
+     @include position;
+     top: 300%;
+     left: 50%;
+     a{
+     @include next;
+     @include hover;
+     }
+}
+
+#last-next{
+      @include position;
+      top: 400%;
+      left: 50%;
+      a{
+      @include next;
+      @include hover;
+      }
+}
+
+
+#nav{
+    position: absolute;
+    top: 102%;
+}
+
+#nav2{
+    position: absolute;
+    top: 202%;
+}
+
+#nav3{
+    position: absolute;
+    top: 302%;
+}

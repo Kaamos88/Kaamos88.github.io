@@ -1,0 +1,171 @@
+body, html {
+  height: 100%;
+  margin: 0; }
+
+body {
+  max-width: 1310px;
+  margin: 0 auto;
+  background-color: #EAE7DC; }
+
+a {
+  text-decoration: none; }
+
+ol, ul {
+  list-style: none; }
+
+h1 {
+  text-align: center;
+  font-family: 'Great Vibes', sans-serif;
+  font-size: 5em;
+  color: #e98074;
+  text-shadow: 5px 5px #d8c3a5;
+  margin: 0; }
+  @media only screen and (max-width: 650px) {
+    h1 {
+      font-size: 3em; } }
+
+p, a {
+  font-size: 1em;
+  margin: 5px;
+  word-spacing: 5px;
+  text-align: center;
+  color: #303644;
+  font-family: 'Roboto', sans-serif; }
+  @media only screen and (max-width: 650px) {
+    p, a {
+      font-size: 0.8em; } }
+
+span {
+  color: #e98074;
+  font-weight: 700; }
+
+.cover {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .cover img {
+    width: 300px; }
+    @media only screen and (max-width: 650px) {
+      .cover img {
+        width: 250px; } }
+  .cover h1 {
+    margin-bottom: 20px; }
+  .cover ul {
+    width: 100%;
+    padding: 100px 0 0 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .cover a:hover {
+    color: #e98074;
+    text-decoration: underline; }
+
+.page-two {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .page-two .skills {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    @media only screen and (max-width: 650px) {
+      .page-two .skills {
+        margin-top: 50px;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+  .page-two h3 {
+    color: #303644;
+    font-family: 'Roboto', sans-serif; }
+  .page-two .img-skills {
+    width: 30%; }
+    @media only screen and (max-width: 650px) {
+      .page-two .img-skills {
+        width: 20%; } }
+
+.page-three {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .page-three .slider {
+    width: 50%; }
+    @media only screen and (max-width: 650px) {
+      .page-three .slider {
+        margin-top: 50px;
+        width: 80%;
+        margin-bottom: 150px; } }
+  .page-three #next {
+    margin-top: 200px;
+    text-align: center; }
+    @media only screen and (max-width: 650px) {
+      .page-three #next {
+        margin-top: 0; } }
+    .page-three #next img {
+      width: 10%; }
+
+.page-four {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .page-four .contact {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    @media only screen and (max-width: 650px) {
+      .page-four .contact {
+        margin-top: 50px;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+  .page-four h3 {
+    color: #303644;
+    font-family: 'Roboto', sans-serif; }
+  .page-four .img-contact {
+    width: 30%; }
+    @media only screen and (max-width: 650px) {
+      .page-four .img-contact {
+        width: 20%; } }
+
+#next {
+  margin-top: 300px;
+  text-align: center; }
+  @media only screen and (max-width: 650px) {
+    #next {
+      margin-top: 0; } }
+  #next img {
+    width: 10%; }
