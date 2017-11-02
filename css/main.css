@@ -42,6 +42,9 @@ span {
   color: #e98074;
   font-weight: 700; }
 
+.pl {
+  display: none; }
+
 .cover {
   height: 100%;
   display: -ms-flexbox;
@@ -75,6 +78,12 @@ span {
   .cover a:hover {
     color: #e98074;
     text-decoration: underline; }
+  .cover #lang {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
 
 .page-two {
   height: 100%;
@@ -125,12 +134,12 @@ span {
   align-items: center;
   -ms-flex-direction: column;
   flex-direction: column; }
-    @media only screen and (max-width: 1025px) and (orientation: landscape) {
-        .page-three {
-          -ms-flex-direction: row;
-          flex-direction: row;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
+  @media only screen and (max-width: 1025px) and (orientation: landscape) {
+    .page-three {
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
   .page-three .slider {
     width: 50%; }
     @media only screen and (max-width: 650px) and (orientation: portrait) {
@@ -140,7 +149,7 @@ span {
         margin-bottom: 50px; } }
     @media only screen and (max-width: 1025px) and (orientation: landscape) {
       .page-three .slider {
-        width: 40%;
+        width: 45%;
         margin: 0; } }
   .page-three #next {
     margin-top: 200px;
