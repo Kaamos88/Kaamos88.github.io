@@ -125,6 +125,12 @@ span {
   align-items: center;
   -ms-flex-direction: column;
   flex-direction: column; }
+    @media only screen and (max-width: 1025px) and (orientation: landscape) {
+        .page-three {
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
   .page-three .slider {
     width: 50%; }
     @media only screen and (max-width: 650px) and (orientation: portrait) {
