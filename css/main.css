@@ -149,7 +149,7 @@ span {
         margin-bottom: 50px; } }
     @media only screen and (max-width: 1025px) and (orientation: landscape) {
       .page-three .slider {
-        width: 45%;
+        width: 40%;
         margin: 0; } }
   .page-three #next {
     margin-top: 200px;
