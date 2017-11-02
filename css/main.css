@@ -20,9 +20,12 @@ h1 {
   color: #e98074;
   text-shadow: 5px 5px #d8c3a5;
   margin: 0; }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 650px) and (orientation: portrait) {
     h1 {
       font-size: 3em; } }
+  @media only screen and (max-width: 1025px) and (orientation: landscape) {
+    h1 {
+      font-size: 2.5em; } }
 
 p, a {
   font-size: 1em;
@@ -31,7 +34,7 @@ p, a {
   text-align: center;
   color: #303644;
   font-family: 'Roboto', sans-serif; }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 650px) and (orientation: portrait) {
     p, a {
       font-size: 0.8em; } }
 
@@ -51,9 +54,12 @@ span {
   flex-direction: column; }
   .cover img {
     width: 300px; }
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 650px) and (orientation: portrait) {
       .cover img {
         width: 250px; } }
+    @media only screen and (max-width: 1025px) and (orientation: landscape) {
+      .cover img {
+        width: 100px; } }
   .cover h1 {
     margin-bottom: 20px; }
   .cover ul {
@@ -63,6 +69,9 @@ span {
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
+    @media only screen and (max-width: 1025px) and (orientation: landscape) {
+      .cover ul {
+        padding: 10px 0 0 0; } }
   .cover a:hover {
     color: #e98074;
     text-decoration: underline; }
@@ -87,17 +96,22 @@ span {
     flex-direction: row;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 650px) and (orientation: portrait) {
       .page-two .skills {
         margin-top: 50px;
         -ms-flex-direction: column;
         flex-direction: column; } }
+    @media only screen and (max-width: 1025px) and (orientation: landscape) {
+      .page-two .skills {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin-top: 25px; } }
   .page-two h3 {
     color: #303644;
     font-family: 'Roboto', sans-serif; }
   .page-two .img-skills {
     width: 30%; }
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 650px) and (orientation: portrait) {
       .page-two .img-skills {
         width: 20%; } }
 
@@ -113,18 +127,29 @@ span {
   flex-direction: column; }
   .page-three .slider {
     width: 50%; }
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 650px) and (orientation: portrait) {
       .page-three .slider {
         margin-top: 50px;
-        width: 80%; } }
+        width: 80%;
+        margin-bottom: 50px; } }
+    @media only screen and (max-width: 1025px) and (orientation: landscape) {
+      .page-three .slider {
+        width: 40%;
+        margin: 0; } }
   .page-three #next {
     margin-top: 200px;
     text-align: center; }
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 1025px) and (orientation: landscape) {
+      .page-three #next {
+        margin-top: 25px; } }
+    @media only screen and (max-width: 650px) and (orientation: portrait) {
       .page-three #next {
         margin-top: 0; } }
     .page-three #next img {
       width: 10%; }
+      @media only screen and (max-width: 1025px) and (orientation: landscape) {
+        .page-three #next img {
+          width: 5%; } }
 
 .page-four {
   height: 100%;
@@ -146,25 +171,39 @@ span {
     flex-direction: row;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 650px) and (orientation: portrait) {
       .page-four .contact {
         margin-top: 50px;
         -ms-flex-direction: column;
         flex-direction: column; } }
+    @media only screen and (max-width: 1025px) and (orientation: landscape) {
+      .page-four .contact {
+        margin-top: 50px;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
   .page-four h3 {
     color: #303644;
     font-family: 'Roboto', sans-serif; }
+    @media only screen and (max-width: 1025px) and (orientation: landscape) {
+      .page-four h3 {
+        font-size: 0.75em; } }
   .page-four .img-contact {
     width: 30%; }
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 650px) and (orientation: portrait) {
       .page-four .img-contact {
         width: 20%; } }
 
 #next {
   margin-top: 300px;
   text-align: center; }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 1025px) and (orientation: landscape) {
+    #next {
+      margin-top: 25px; } }
+  @media only screen and (max-width: 650px) and (orientation: portrait) {
     #next {
       margin-top: 0; } }
   #next img {
     width: 10%; }
+    @media only screen and (max-width: 1025px) and (orientation: landscape) {
+      #next img {
+        width: 5%; } }
